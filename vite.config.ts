@@ -1,5 +1,5 @@
 
-  import { defineConfig } from 'vite';
+import { defineConfig } from 'vite';
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
 
@@ -52,6 +52,18 @@
     build: {
       target: 'esnext',
       outDir: 'build',
+      chunkSizeWarningLimit: 600,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            vendor: ['react', 'react-dom'],
+            ui: ['lucide-react', 'next-themes', 'class-variance-authority'],
+            radix: Object.keys(require('./package.json').dependencies)
+              .filter(dep => dep.includes('@radix-ui')),
+            utils: ['sonner', 'recharts', 'react-hook-form']
+          }
+        }
+      }
     },
     server: {
       port: 3000,
