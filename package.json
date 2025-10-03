@@ -47,14 +47,17 @@
             "vaul": "^1.1.2"
       },
       "devDependencies": {
+            "@rollup/rollup-win32-x64-msvc": "^4.52.4",
+            "@swc/core": "^1.13.5",
+            "@swc/core-win32-x64-msvc": "^1.13.20",
             "@types/node": "^20.10.0",
             "@vitejs/plugin-react-swc": "^3.10.2",
             "vite": "^6.3.5"
       },
       "scripts": {
             "dev": "vite",
-            "build": "vite build",
-            "vercel-build": "npm install --omit=optional && vite build"
+            "build": "vite build --emptyOutDir",
+            "vercel-build": "ROLLUP_SKIP_NODEJS=true vite build"
       },
       "engines": {
             "node": ">=18.x"
