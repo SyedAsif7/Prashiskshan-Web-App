@@ -5,7 +5,7 @@ import { Label } from './ui/label';
 import { Card } from './ui/card';
 import { GraduationCap, Mail, Lock, User as UserIcon, Chrome, ArrowLeft } from 'lucide-react';
 import { User, UserRole } from '../App';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 

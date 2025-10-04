@@ -22,7 +22,7 @@ import { Input } from './ui/input';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { User } from '../App';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { Progress } from './ui/progress';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from './ui/dialog';

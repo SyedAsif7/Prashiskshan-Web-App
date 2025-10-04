@@ -25,7 +25,7 @@ import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { User } from '../App';
 import { internships, filterInternships, Internship } from '../data/internships';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { Progress } from './ui/progress';
